@@ -30,4 +30,13 @@ cd vigenere-cipher-python
 3. Execute o script no terminal:
 
 Bash
-python vigenere.py
+python Cifra_de_Vigenere.py
+
+🧠 Lógica do Algoritmo
+O projeto foi dividido em três funções principais para garantir um código limpo e de fácil manutenção:
+
+1. repetir(frase, chave): Ajusta o tamanho da chave para ser compatível com o texto, respeitando os espaços originais.
+
+2. vigenere_criptografar(frase, chave): Aplica a lógica matemática (letra_texto + letra_chave) % 26 para gerar o texto cifrado.
+
+3. vigenere_descriptografar(frase, chave): Aplica a lógica reversa (letra_texto - letra_chave) % 26 para recuperar o texto original.
